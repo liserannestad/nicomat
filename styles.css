@@ -1,0 +1,56 @@
+.menylinje {
+	display: flex;
+    align-items: center; /* Sentrer elementene vertikalt */
+    margin-top: 20px;
+    height: 70px;
+	background-color: #585858; /* Legg til en lys grå bakgrunn */
+    padding: 10px; /* Legg til litt polstring for å gi luft rundt elementene */
+}
+
+.logo {
+	margin-top: 15px;
+	position: absolute;
+	height: 80px;
+	width: 95px;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+	margin-left: 280px;
+}
+
+.meny {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	list-style-type: none;
+	z-index: 1;
+	margin-right: 280px;
+	display: flex;
+}
+
+.meny li {
+	display: inline; //menyen blir på en rekke
+	margin-right: 10px;
+	padding: 30px;
+	background-color: #585858;
+}
+
+
+.meny li a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+.forsidebilde {
+	text-align: left;
+	margin: 0 auto;
+	margin-top: 10px;
+
+}
+
+.info {
+	text-align: left;
+	max-width: 800px;
+	margin: 0 auto;
+}
