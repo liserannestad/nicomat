@@ -1,10 +1,16 @@
+
 .menylinje {
 	display: flex;
     align-items: center; /* Sentrer elementene vertikalt */
     margin-top: 20px;
     height: 70px;
-	background-color: #585858; /* Legg til en lys grå bakgrunn */
+	background-color: #585858; /* Legg til en mørk grå bakgrunn */
     padding: 10px; /* Legg til litt polstring for å gi luft rundt elementene */
+    font-family: sans-serif;
+}
+
+.meny li:hover {
+    background-color: #505050; /* Endre bakgrunnsfargen når du hover over knappene */
 }
 
 .logo {
@@ -20,7 +26,6 @@
 
 .meny {
 	position: absolute;
-	top: 10px;
 	right: 10px;
 	list-style-type: none;
 	z-index: 1;
@@ -47,13 +52,58 @@
 	margin: 0 auto;
 	margin-top: 10px;
 	display: block;
-	width: 800px;
-	height: 600px;
+	width: 1000px;
+	height: 650px;
 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Plasserer elementene med lik avstand mellom dem */
+    align-items: flex-start; /* Justerer høyden på elementene til toppen av containeren */
+    max-width: 800px; /* Juster bredden etter behov */
+    margin: 0 auto; /* Sentrerer .container på siden horisontalt */
+    padding: 0 20px; /* Legg til sidepolstring for estetisk utseende */
 }
 
 .info {
-	text-align: left;
-	max-width: 800px;
-	margin: 0 auto;
+    max-width: calc(70% - 10px); /* Bruker 50% av bredden for å gi plass til åpningstidene */
+    text-align: left; /* Justerer tekst til venstre */
+    font-family: sans-serif; /* Angir skrifttypen */
 }
+
+.info p {
+    font-size: 20px; /* Angir skriftstørrelsen */
+    line-height: 30px; /* Angir linjehøyden */
+}
+
+.apningstider {
+    max-width: calc(50% - 10px); /* Bruker 50% av bredden for å gi plass til info */
+    text-align: left; /* Justerer tekst til venstre */
+    margin-top: 60px;
+    font-family: sans-serif;
+}
+
+.bildegalleri {
+    display: flex;
+    flex-wrap: wrap; /* Tillater at bilder blir stablet på flere linjer */
+    justify-content: center; /* Sentrer bildene på den horisontale aksen */
+    align-items: center; /* Sentrer bildene på den vertikale aksen */
+    margin-top: 30px;
+}
+
+.bildegalleri img {
+    margin: 0px; /* Legger til litt mellomrom mellom bildene */
+}
+
+figure {
+    text-align: center; /* Sentrer bildetekstene */
+    margin: 5px; /* Legg til litt mellomrom rundt hvert bilde */
+}
+
+figcaption {
+    font-size: 25px; /* Angi skriftstørrelsen */
+    margin-top: 10px; /* Legg til litt avstand mellom bildet og teksten */
+    font-family: sans-serif;
+}
+
